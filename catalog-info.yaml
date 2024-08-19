@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-gcb-demo-1"
+  links:
+    - title: Production
+      url: https://test-gcb-demo-1.glair.id
+    - title: Staging
+      url: https://test-gcb-demo-1-staging.glair.id
+    - title: Develop
+      url: https://test-gcb-demo-1-develop.glair.id
+  annotations:
+    google.com/cloudbuild-project-slug: 'intern-infra'
+    google.com/cloudbuild-repo-name: 'test-gcb-demo-1'
+    google.com/cloudbuild-location: 'asia-east1'
+spec:
+  type: service
+  owner: group:sre
+  lifecycle: experimental

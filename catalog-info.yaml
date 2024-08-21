@@ -13,6 +13,7 @@ metadata:
     google.com/cloudbuild-project-slug: 'intern-infra'
     google.com/cloudbuild-repo-name: 'test-gcb-demo-1'
     google.com/cloudbuild-location: 'asia-east1'
+    github.com/project-slug: 'rey-gdp-intern/test-gcb-demo-1'
 spec:
   type: service
   owner: group:sre

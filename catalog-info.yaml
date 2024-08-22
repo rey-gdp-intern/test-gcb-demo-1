@@ -14,7 +14,12 @@ metadata:
     google.com/cloudbuild-repo-name: 'test-gcb-demo-1'
     google.com/cloudbuild-location: 'asia-east1'
     github.com/project-slug: 'rey-gdp-intern/test-gcb-demo-1'
+    backstage.io/techdocs-ref: url:https://test-gcb-demo-1-techdocs.glair.id  # Add the TechDocs annotation
 spec:
   type: service
   owner: group:sre
   lifecycle: experimental
+  providesApis:
+    - default/api-example  # Replace with your actual API entity reference
+  consumesApis:
+    - default/other-api-example  # Replace with the API entity this component consumes
